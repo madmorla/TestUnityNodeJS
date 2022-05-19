@@ -60,4 +60,5 @@ Requisitos:
 un error, éste muestre un pop-up de alerta con algún mensaje de error.
 
   He añadido un pop-up para cuando la conexión no ha sido correcta, se muestre mostrando un mensaje de error y un botón para cerrarlo.
+  Para mostrar un ejemplo, cancelar la ejecución del servidor e intentar conectarse desde Unity. Al no obtener una respuesta exitosa se mostrará el pop-up.
 
