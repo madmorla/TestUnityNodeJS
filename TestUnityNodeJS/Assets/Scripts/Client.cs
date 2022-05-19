@@ -5,15 +5,10 @@ using UnityEngine.Networking;
 
 public class Client : MonoBehaviour
 {
-	[SerializeField] TextMeshProUGUI hourText;
 	const string url = "http://localhost:8000/";
-
-
-    void Start()
-	{
-		
-	}
-
+	
+	[SerializeField] TextMeshProUGUI hourText;
+	
 	public void OnConnectClick()
 	{
 		StartCoroutine(TryConnection());
@@ -28,13 +23,12 @@ public class Client : MonoBehaviour
 		if(request.result == UnityWebRequest.Result.Success)
 		{
 			hourText.text = $"Current Hour: {request.downloadHandler.text}";
-			hourText.color = Color.white;
-
 		}
 		else
 		{
-			hourText.text = "ERROR de conexión";
-			hourText.color = Color.red;
+			PopUpUI.Instance.SetTitle("Error!")
+				.SetMessage("No se ha podido establecer la conexión.")
+				.Show();
 		}
 	}
 }

@@ -56,3 +56,8 @@ Requisitos:
 
   He realizado una build con arquitectura arm64 y comprimido en un .zip en la carpeta apk
 
+- Añade un control de errores al proyecto en Unity para que si el servicio de Node da
+un error, éste muestre un pop-up de alerta con algún mensaje de error.
+
+  He añadido un pop-up para cuando la conexión no ha sido correcta, se muestre mostrando un mensaje de error y un botón para cerrarlo.
+
