@@ -2,15 +2,18 @@ using System.Collections;
 using TMPro;
 using UnityEngine;
 using UnityEngine.Networking;
+using UnityEngine.UI;
 
 public class Client : MonoBehaviour
 {
 	const string url = "http://localhost:8000/";
-	
+
+	[SerializeField] Button connectButton;
 	[SerializeField] TextMeshProUGUI hourText;
 	
 	public void OnConnectClick()
 	{
+		connectButton.interactable = false;
 		StartCoroutine(TryConnection());
 	}
 
@@ -30,5 +33,7 @@ public class Client : MonoBehaviour
 				.SetMessage("No se ha podido establecer la conexión.")
 				.Show();
 		}
+
+		connectButton.interactable = true;
 	}
 }

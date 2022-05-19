@@ -1,7 +1,8 @@
 var http = require('http');
 
+const port = 8000;
 http.createServer(function (req, res) {
-    res.writeHead(200, {'Content-Type': 'text/html'});
+    res.writeHead(200, { 'Content-Type': 'text/html' });
 
     var ts = Date.now();
 
@@ -9,4 +10,6 @@ http.createServer(function (req, res) {
     var currentHour = currentDate.getHours().toString();
 
     res.end(currentHour);
-}).listen(8000);
+}).listen(port);
+
+console.log(`Server listening on ${port}`);
