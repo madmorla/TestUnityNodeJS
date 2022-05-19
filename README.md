@@ -36,14 +36,23 @@ Requisitos:
 ## Opcional:
 
 - Sustituye/añade otra implementación del servicio usando sólo Node, sin requerir de Express.js
+
   En el archivo "nodeServer.js" podemos encontrar la implementación usando sólo Node. Ejecutar el servidor usando el siguiente comando:
   node nodeServer.js
 
 - Formatea la hora de salida a tu gusto, con algún paquete de node a tu elección, por ejemplo: https://www.npmjs.com/package/date-and-time
+
   Se ha utilizado el paquete recomendado para formatear la hora
 
 - Añade y configura un linter de tu elección al proyecto Node con una configuración básica, por ejemplo: https://github.com/airbnb/javascript
+
   He configurado ESlint con la guía de estilo airbnb y rectificado el fichero "server.js". Además he añadido una regla para el control de versiones git en "eslintrc.json":
   "rules": {
-  "git" : "\*.js text eol=lf"
+  	"git" : "\*.js text eol=lf"
   }
+
+- Consigue configurar el proyecto en Android para hacer una build para la arquitectura
+  ARM64 y sube al repositorio o bien el .apk, o el .aab
+
+  He realizado una build con arquitectura arm64 y comprimido en un .zip en la carpeta apk
+

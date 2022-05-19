@@ -28,6 +28,13 @@ public class Client : MonoBehaviour
 		if(request.result == UnityWebRequest.Result.Success)
 		{
 			hourText.text = $"Current Hour: {request.downloadHandler.text}";
+			hourText.color = Color.white;
+
+		}
+		else
+		{
+			hourText.text = "ERROR de conexión";
+			hourText.color = Color.red;
 		}
 	}
 }
