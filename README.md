@@ -43,4 +43,7 @@ Opcional:
     En el archivo "nodeServer.js" podemos encontrar la implementación usando sólo Node. Ejecutar el servidor usando el siguiente comando:
         node nodeServer.js
 
+ - Formatea la hora de salida a tu gusto, con algún paquete de node a tu elección, por ejemplo: https://www.npmjs.com/package/date-and-time
+    Se ha utilizado el paquete recomendado para formatear la hora
+
 

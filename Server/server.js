@@ -2,13 +2,12 @@
 const express = require('express');
 const app = express();
 
+const date = require('date-and-time');
 
 // Routes
 app.get("/", async (req, res) => {
-    var ts = Date.now();
-
-    var currentDate = new Date(ts);
-    var currentHour = currentDate.getHours().toString();
+    const now = new Date();
+    var currentHour = date.format(now, 'hh:mm A [GMT]Z'); 
 
     res.send(currentHour);
 });
