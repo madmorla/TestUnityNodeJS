@@ -70,3 +70,5 @@ crashlytics-build.properties
 # NodeJS ignores
 node_modules/
 Server/package-lock.json
+
+*.js text eol=lf
