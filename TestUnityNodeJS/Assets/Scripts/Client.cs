@@ -27,7 +27,7 @@ public class Client : MonoBehaviour
 
 		if(request.result == UnityWebRequest.Result.Success)
 		{
-			hourText.text = $"Hour: {request.downloadHandler.text}";
+			hourText.text = $"Current Hour: {request.downloadHandler.text}";
 		}
 	}
 }
