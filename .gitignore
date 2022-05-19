@@ -66,3 +66,6 @@ crashlytics-build.properties
 # Temporary auto-generated Android Assets
 /MyRPG/[Aa]ssets/[Ss]treamingAssets/aa.meta
 /MyRPG/[Aa]ssets/[Ss]treamingAssets/aa/*
+
+# NodeJS ignores
+node_modules/
