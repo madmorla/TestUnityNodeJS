@@ -11,5 +11,6 @@
         "sourceType": "module"
     },
     "rules": {
+        "git" : "*.js text eol=lf"
     }
 }
