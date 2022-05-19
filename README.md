@@ -35,3 +35,12 @@ Ejecución:
  - Abrir el proyecto TestUnityNodeJS con Unity y abrir la escena "SampleScene"
  - Pulsar en play para ejecutar la escena.
  - Pulsar en el botón Connect y deberá devolver la hora actual mostrada en un campo de texto.
+
+
+Opcional:
+----------
+ - Sustituye/añade otra implementación del servicio usando sólo Node, sin requerir de Express.js
+    En el archivo "nodeServer.js" podemos encontrar la implementación usando sólo Node. Ejecutar el servidor usando el siguiente comando:
+        node nodeServer.js
+
+
