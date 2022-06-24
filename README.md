@@ -53,7 +53,7 @@ Requisitos:
 <code>./node_modules/.bin/eslint --init</code>
   
   
-  He respondido algunas preguntas que pedía para la configuración y he configurado ESlint con la guía de estilo airbnb y rectificado el fichero "server.js". 
+- He respondido algunas preguntas que pedía para la configuración y he configurado ESlint con la guía de estilo airbnb y rectificado el fichero "server.js". 
     Además he añadido una regla para el control de versiones git en "eslintrc.json":
   
   <code>
