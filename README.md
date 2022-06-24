@@ -1,6 +1,6 @@
 # TestUnityNodeJS
 
-Test Unity with NodeJS and Express
+Test Unity with NodeJS and Express. Esto es una prueba que me piden para una entrevista de trabajo.
 
 # Instrucciones de instalación:
 
